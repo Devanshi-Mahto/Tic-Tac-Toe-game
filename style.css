@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+    background: linear-gradient(90deg, #ff0080, #ff8c00, #8323ba);
+    text-align: center;
+}
+h1{
+    margin:5vmin;
+    text-decoration: underline;
+    color: rgb(84, 37, 4);
+      font-weight: bold;
+ 
+}
+
+
+
+.container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(0, 0, 0.1) ;
+    font-size: 8vmin;
+    color:rgb(162, 3, 3);
+    background-color: bisque;
+}
+
+.box:hover{
+    opacity:0.6;}
+
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius:1rem;
+    /* background-color: rgb(35, 21, 21); */
+    background: linear-gradient(90deg, #8ae80f, #cec70a, #06673b);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#reset-btn:hover{
+    color:rgb(28, 19, 8);
+    opacity: 0.5;
+}
+
+#new-btn:hover{
+    color:rgb(191, 185, 179);
+    opacity: 0.7;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius:1rem;
+    /* background-color: rgb(35, 21, 21); */
+    background: linear-gradient(90deg, #2ea6e7, #356ff7, #1c0278);
+    color: aliceblue; 
+    cursor: pointer;
+}
+
+#msg{
+    color: rgb(86, 7, 7);
+    font-weight: bolder;
+    font-size: 5vmin;
+    padding: 5vmin;
+}
+
+.msg-container{
+    height: 30vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
+
+
+.player-setup {
+    margin: 2vmin;
+    display: flex;
+    justify-content: center;
+    gap: 1vmin;
+}
+
+.player-setup input, .player-setup select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.player-setup button{
+     padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ccef4d;
+    cursor: pointer;
+
+}
+
+.player-setup button:hover{
+    opacity: 0.6;
+}
+#turn-indicator {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1vmin;
+}
